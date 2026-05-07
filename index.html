@@ -987,6 +987,46 @@
   }
 }
 
+
+/* Mobile navigation cleanup - no dark card, one clean row */
+@media (max-width:700px){
+  header nav{
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+    backdrop-filter:none !important;
+    border-radius:0 !important;
+
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:center !important;
+    align-items:center !important;
+
+    left:10px !important;
+    right:10px !important;
+    width:auto !important;
+    padding:0 !important;
+    gap:clamp(7px, 2.3vw, 12px) !important;
+    font-size:clamp(10px, 2.85vw, 12px) !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+  }
+
+  header nav a{
+    white-space:nowrap !important;
+    text-shadow:0 3px 12px rgba(0,0,0,.86) !important;
+  }
+}
+
+@media (max-width:380px){
+  header nav{
+    gap:6px !important;
+    font-size:10px !important;
+    left:8px !important;
+    right:8px !important;
+  }
+}
+
 </style>
 </head>
 <body>
