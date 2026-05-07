@@ -1073,6 +1073,91 @@
   }
 }
 
+
+/* Final mobile cleanup: logo/nav separation + vertical social icons only */
+@media (max-width:700px){
+  .hero-top-left-row{
+    top:18px !important;
+    left:18px !important;
+    right:auto !important;
+    width:auto !important;
+    max-width:118px !important;
+    display:block !important;
+    z-index:120 !important;
+  }
+
+  .hero-logo-top{
+    width:118px !important;
+    height:auto !important;
+    padding-top:0 !important;
+  }
+
+  .hero-top-badge{
+    display:none !important;
+  }
+
+  header nav{
+    top:72px !important;
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    width:84% !important;
+    justify-content:center !important;
+    gap:8px 10px !important;
+    font-size:12px !important;
+    line-height:1.1 !important;
+    text-align:center !important;
+    z-index:110 !important;
+  }
+
+  .socials{
+    position:absolute !important;
+    left:14px !important;
+    top:146px !important;
+    bottom:auto !important;
+    margin:0 !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+    z-index:110 !important;
+    transform:none !important;
+  }
+
+  .socials .ico{
+    width:44px !important;
+    height:44px !important;
+    border-radius:12px !important;
+  }
+
+  .socials .ico svg{
+    width:22px !important;
+    height:22px !important;
+  }
+}
+
+@media (max-width:430px){
+  .hero-top-left-row{
+    top:18px !important;
+    left:16px !important;
+    max-width:108px !important;
+  }
+
+  .hero-logo-top{
+    width:108px !important;
+  }
+
+  header nav{
+    top:70px !important;
+    width:84% !important;
+    gap:8px 9px !important;
+    font-size:11px !important;
+  }
+
+  .socials{
+    left:14px !important;
+    top:140px !important;
+  }
+}
+
 </style>
 </head>
 <body>
