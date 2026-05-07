@@ -933,46 +933,10 @@
 }
 
 
-/* D&M Digitalenterprise signature */
-.site-credit{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  color:rgba(255,255,255,.72);
-  font-size:13px;
-  line-height:1.35;
-}
-
-.site-credit span{
-  display:block;
-  color:rgba(255,255,255,.58);
-  font-size:12px;
-}
-
-.site-credit strong{
-  display:block;
-  color:#fff;
-  font-size:14px;
-  letter-spacing:.02em;
-}
-
-.site-credit img{
-  width:46px;
-  height:46px;
-  object-fit:contain;
-  border-radius:10px;
-  opacity:.92;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.35));
-}
-
-@media (max-width:700px){
-  footer .row{
-    align-items:flex-start;
-  }
-
-  .site-credit{
-    width:100%;
-    margin-top:10px;
+/* Desktop hero alignment fix - closer to approved local preview */
+@media (min-width:701px){
+  .hero-copy{
+    transform:translateY(52px);
   }
 }
 
@@ -1151,13 +1115,6 @@
 <div class="wrap row">
 <div><strong>Floor Master Solutions</strong></div>
 <div data-i18n="footer_tag">Profesionalna oprema za pripremu i obradu površina</div>
-<a class="site-credit" href="https://www.dmdigitalenterprise.com/" target="_blank" rel="noopener" aria-label="D&M Digitalenterprise">
-  <img src="images/dm-digitalenterprise-logo.webp" alt="D&amp;M Digitalenterprise logo" loading="lazy">
-  <div>
-    <span>Web design &amp; development</span>
-    <strong>D&amp;M Digitalenterprise</strong>
-  </div>
-</a>
 </div>
 </footer>
 <script>
